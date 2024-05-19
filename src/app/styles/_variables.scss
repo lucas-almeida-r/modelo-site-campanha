@@ -1,0 +1,74 @@
+:root {
+  /////////////////////////////////////
+  // Cores da paleta da Campanha
+  /////////////////////////////////////
+
+  --blue-010: #003d5c;
+  --blue-020: #233e5d;
+  --blue-030: #294862;
+  --blue-040: #40708f;
+  --blue-050: #2e8ec2;
+  --blue-060: #3dace1;
+
+  --orange-010: #f89625;
+  --orange-020: #ec7229;
+
+  --gray-020: #d4d4d4;
+  --gray-010: #b0b0b0;
+
+  --white: #f6f6ff;
+  --black: #2a2a2a;
+
+  /////////////////////////////////////
+  // Variáveis de cor
+  /////////////////////////////////////
+
+  --color-primary: var(--blue-050);
+  --color-primary-dark: var(--blue-020);
+
+  --color-secondary: var(--orange-010);
+  --color-secondary-dark: var(--orange-020);
+
+  //--color-bg: var(--white);
+  //--color-txt-on-bg: var(--black);
+  //--color-txt-on-primary: var(--white);
+  //--color-txt-on-secondary: var(--white);
+
+  /////////////////////////////////////
+  // Variaveis de espaçamento
+  /////////////////////////////////////
+  --space-xxs: 0.4rem;
+  --space-xs: 0.8rem;
+  --space-sm: 1.2rem;
+  --space-md: 2rem;
+  --space-lg: 3.2rem;
+  --space-xl: 5.2rem;
+
+  --space-unit: 10px; // @@@Voltar e ver se deixo px fixo, px com bse-unit ou rem com font-size
+  --space-xxs: calc(0.4 * var(--space-unit));
+  --space-xs: calc(0.8 * var(--space-unit));
+  --space-sm: calc(1.2 * var(--space-unit));
+  --space-md: calc(2 * var(--space-unit));
+  --space-lg: calc(3.2 * var(--space-unit));
+  --space-xl: calc(5.2 * var(--space-unit));
+
+  /////////////////////////////////////
+  // Variaveis de tipografia
+  /////////////////////////////////////
+
+  --text-font-primary: MilkyNice, "Arial Black";
+  --text-font-secondary: Comfortaa, "Helvetica Neue", "Arial";
+
+  --text-sm: 0.8rem;
+  --text-md: 1.8rem;
+  --text-lg: 2.4rem;
+  --text-xl: 3.6rem;
+  --text-xxl: 5.4rem;
+
+  /////////////////////////////////////
+  // Media breakpoints
+  /////////////////////////////////////
+  --min-width-desktop: 768px;
+}
+
+$min-width-desktop: 768px;

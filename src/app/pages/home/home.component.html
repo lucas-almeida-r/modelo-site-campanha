@@ -1,0 +1,59 @@
+<app-header />
+
+<main>
+  <section id="cover-section">
+    <h1>Campanha USP do Agasalho</h1>
+    <a href="#highlights-section" class="btn btn-secondary">
+      <!-- target="_blank" -->
+      Conheça a Campanha
+    </a>
+  </section>
+
+  <section id="highlights-section">
+    <div>
+      <h2>390 mil</h2>
+      <p>peças arrecadadas</p>
+    </div>
+    <div>
+      <h2>60</h2>
+      <p>entidades auxiliadas</p>
+    </div>
+    <div>
+      <h2>100</h2>
+      <p>membros voluntários</p>
+    </div>
+  </section>
+
+  <section id="about-section">
+    <img src="assets/img/about.png" alt="" />
+    <article>
+      <h2>Sobre a Campanha</h2>
+      <p>
+        Fundada em 2007, a Campanha USP do Agasalho é organizada por alunos de
+        diversos cursos da USP São Carlos que mobilizam dezenas de participantes
+        em eventos como o Saída às Ruas, o Bazar Cultural, as triagens e as
+        visitas às entidades auxiliadas, visando ajudar aqueles que sofrem com o
+        inverno de São Carlos.
+      </p>
+    </article>
+  </section>
+
+  <section id="activities-section">
+    <h2>Como atuamos</h2>
+    <!-- <app-activities /> -->
+    <ul>
+      @for(item of arrayActivities; track item){
+      <li>
+        <app-card [data]="item" clickable img title />
+      </li>
+      }
+    </ul>
+  </section>
+
+  <section id="sponsors-section">
+    <h2>Patrono da Campanha</h2>
+    <img src="assets/img/patron.png" alt="Tractian" />
+  </section>
+</main>
+
+<app-footer />

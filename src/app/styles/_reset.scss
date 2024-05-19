@@ -1,0 +1,58 @@
+@import "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+html {
+  //font-size: calc(62.5% * 1.4);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--white);
+}
+
+h1,
+h2 {
+  font-size: var(--text-xl);
+  font-family: var(--text-font-primary);
+}
+
+h3 {
+  font-size: var(--text-lg);
+  font-family: var(--text-font-secondary);
+}
+
+span,
+p,
+a {
+  font-size: var(--text-md);
+  font-family: var(--text-font-secondary);
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+span {
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

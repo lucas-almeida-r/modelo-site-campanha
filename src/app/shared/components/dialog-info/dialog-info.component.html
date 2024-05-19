@@ -1,0 +1,10 @@
+<header>
+  <h3>{{ getData()?.title }}</h3>
+
+  <button (click)="closeModal()">
+    <!-- <img src="assets/icons/dialog/close.svg" alt="fechar modal" /> -->
+    <mat-icon aria-hidden="false" aria-label="fechar modal">close</mat-icon>
+  </button>
+</header>
+
+<p>{{ getData()?.description }}</p>

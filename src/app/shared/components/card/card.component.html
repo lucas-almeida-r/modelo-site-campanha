@@ -1,0 +1,13 @@
+<button
+  (click)="openDialog(data)"
+  [class.clickable]="clickable"
+  [disabled]="!clickable"
+>
+  @if(img){
+  <img [src]="data.src" [alt]="data.alt" />
+  } @if(title){
+  <h3>{{ data.title }}</h3>
+  } @if(description){
+  <p>{{ data.description }}</p>
+  }
+</button>

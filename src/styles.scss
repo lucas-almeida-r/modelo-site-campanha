@@ -1,0 +1,15 @@
+@use "./app/styles";
+
+@font-face {
+  font-family: "MilkyNice";
+  src: url("assets/fonts/MilkyNice/MilkyNice.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("assets/fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

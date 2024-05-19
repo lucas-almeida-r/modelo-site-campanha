@@ -1,0 +1,39 @@
+:host {
+  .logo {
+    height: 100px;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-sm);
+
+    .dropdown-social-media-container {
+      display: flex;
+      gap: var(--space-lg);
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm);
+    gap: var(--space-lg);
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      align-items: center;
+
+      a:hover {
+        opacity: 0.6;
+        //text-decoration: underline;
+      }
+    }
+  }
+}

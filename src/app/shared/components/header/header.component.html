@@ -1,0 +1,58 @@
+<header>
+  <div class="header">
+    <img src="assets/img/logo.png" class="logo" alt="" loading="eager" />
+    <nav>
+      @if (showNavBar) {
+      <a href="#highlights-section">Sobre nós</a>
+      <a href="#activities-section">Atuação</a>
+      <a href="#sponsors-section">Apoio</a>
+
+      <a
+        href="https://www.instagram.com/instagasalho/"
+        aria-label="Abrir perfil no Instagram"
+      >
+        <app-svg-icon name="instagram" size="30px" />
+      </a>
+      <a
+        href="https://www.facebook.com/campanhadoagasalhouspsc/"
+        aria-label="Abrir perfil no Facebook"
+      >
+        <app-svg-icon name="facebook" size="30px" />
+      </a>
+      } @else {
+      <button (click)="toggleDropdown()">
+        @if(showDropdown) {
+        <mat-icon aria-hidden="false" aria-label="Fechar menu de navegação"
+          >close</mat-icon
+        >
+        } @else {
+        <mat-icon aria-hidden="false" aria-label="Abrir menu de navegação"
+          >menu</mat-icon
+        >
+        }
+      </button>
+      }
+    </nav>
+  </div>
+  @if (showDropdown) {
+  <div class="dropdown-menu">
+    <a href="#highlights-section" (click)="toggleDropdown()">Sobre nós</a>
+    <a href="#activities-section" (click)="toggleDropdown()">Atuação</a>
+    <a href="#sponsors-section" (click)="toggleDropdown()">Apoio</a>
+    <div class="dropdown-social-media-container">
+      <a
+        href="https://www.instagram.com/instagasalho/"
+        aria-label="Abrir perfil no Instagram"
+      >
+        <app-svg-icon name="instagram" size="30px" />
+      </a>
+      <a
+        href="https://www.facebook.com/campanhadoagasalhouspsc/"
+        aria-label="Abrir perfil no Facebook"
+      >
+        <app-svg-icon name="facebook" size="30px" />
+      </a>
+    </div>
+  </div>
+  }
+</header>
